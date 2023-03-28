@@ -148,30 +148,32 @@
                 <button class="bg-dark text-white px-5 py-3 h6 fw-bold" style="width:fit-content">Explore</button>
             </div>
             <div class=" col-12 col-lg-6 imgeveryday d-flex justify-content-center text-white align-items-end">
-                <section>
-                    <a href="" style="text-decoration: none" class="text-white mb-3 h5">Outfit</a>
-                    <i class="fa-solid fa-arrow-right ms-2 mb-3"></i>
+                <section class="d-flex align-items-center mb-4">
+                    <a href="" style="text-decoration: none" class="text-white m-0 p-0 h5">Outfit</a>
+                    <i class="fa-solid fa-arrow-right ms-4"></i>
                 </section>
             </div>
         </div>
 
         <div class="row pt-2 articles " style="width: 60%; height:35rem;">
         <div class="col-12 col-lg-4 jacket d-flex justify-content-center text-white align-items-end ">
-            <section>
-                <a href="" style="text-decoration: none" class="text-white mb-3 h5">Jacket</a>
-                <i class="fa-solid fa-arrow-right ms-2 mb-3"></i>
+            <section class="d-flex align-items-center mb-4">
+                <a href="" style="text-decoration: none" class="text-white h5 m-0 p-0">Jacket</a>
+                <i class="fa-solid fa-arrow-right ms-4"></i>
             </section>
         </div>
         <div class="col-12 col-lg-4 px-0 my-2 my-lg-0 ">
-            <section class="caps d-flex justify-content-center text-white align-items-end h-100 mx-lg-2">
-                <a href="" style="text-decoration: none" class="text-white mb-3 h5">Hats</a>
-                <i class="fa-solid fa-arrow-right ms-2 mb-3"></i>
+            <section class="caps d-flex justify-content-center text-white align-items-end h-100 mx-lg-2 ">
+                <section class="d-flex align-items-center mb-4">
+                    <a href="" style="text-decoration: none" class="text-white h5 m-0 p-0">Hats</a>
+                    <i class="fa-solid fa-arrow-right m-0 p-0  ms-4"></i>
+                </section>
             </section>
         </div>
         <div class="col-12 col-lg-4 sneakers d-flex justify-content-center text-white align-items-end">
-            <section>
-                <a href="" style="text-decoration: none" class="text-white mb-3 h5">Sneakers</a>
-                <i class="fa-solid fa-arrow-right ms-2 mb-3"></i>
+            <section class="d-flex align-items-center mb-4">
+                <a href="" style="text-decoration: none" class="text-white h5  m-0 p-0">Sneakers</a>
+                <i class="fa-solid fa-arrow-right m-0 p-0  ms-4"></i>
             </section>
         </div>
     </div>

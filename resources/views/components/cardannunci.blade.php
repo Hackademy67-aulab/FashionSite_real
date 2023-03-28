@@ -1,7 +1,8 @@
 {{-- card --}}
-<section style="width:18rem" class="mb-5 mx-5">
-    {{-- <div class="d-flex justify-content-end align-items-end" style="background-image: url('{{$articolo['img']}}'); background-size: cover; background-repeat: no-repeat;
-    ; height:25rem;"> --}}
+<section style="width:18rem" class="mb-5 mx-5 mt-5">
+    <div class="d-flex justify-content-end align-items-end" style="background-image: url('{{ Storage::url("{$product->img}") }}'); background-size: cover; background-repeat: no-repeat;
+    ; height:25rem;">
+
 
         {{-- heart --}}
         <div class="body me-1">
@@ -22,6 +23,6 @@
     </div>
     <p class="my-2 p-0">{{$product->name}}</p>
     <p class="fw-bold m-0 p-0">{{$product->price}} $</p>
-    <p class="fw-bold m-0 p-0">{{$product->description}} $</p>
+    <p class="fw-bold m-0 p-0">{{$product->description}}</p>
 </section>
 {{-- fine card --}}

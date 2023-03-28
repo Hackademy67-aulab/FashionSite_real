@@ -36,12 +36,19 @@
           <div class="alert alert-danger">{{ $message }}</div>
           @enderror
 
-          <label>
+            <label>
+                <input name="img" type="file" class="form-control @error('img') is-invalid @enderror" accept="image/jpg, image/bmp, image/png, image/webp">
+                @error('img')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
+            </label>
+
+          {{-- <label>
             <input name="img" type="file" placeholder="img" accept="image/png, image/jpeg" class="@error('img') is-invalid @enderror"/>
           </label>
           @error('img')
           <div class="alert alert-danger">{{ $message }}</div>
-          @enderror
+          @enderror --}}
 
 
           <button class="red" type="submit">Crea prodotto</button>
