@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\ShopController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,3 +23,13 @@ Route::get('/creaprodotto', [ProductController::class, 'creaprodotto'])->name('c
 Route::post('/prodottocreato', [ProductController::class, 'prodottocreato'])->name('prodottocreato');
 
 Route::get('/listaprodotti', [ProductController::class, 'listaprodotti'])->name('listaprodotti');
+
+
+Route::get('/creanegozio', [ShopController::class, 'create'])->name('creanegozio');
+Route::post('/negoziocreato', [ShopController::class, 'store'])->name('negoziocreato');
+Route::get('/listanegozi', [ShopController::class, 'index'])->name('listanegozi');
+
+Route::get('/modificanegozi{shop}', [ShopController::class, 'edit'])->name('modificanegozi');
+Route::put('/negoziomodificato{shop}', [ShopController::class, 'update'])->name('negoziomodificato');
+
+Route::delete('/negoziocancellato{shop}', [ShopController::class, 'destroy'])->name('negoziocancellato');

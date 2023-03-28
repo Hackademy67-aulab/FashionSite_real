@@ -18,6 +18,14 @@
             <a class="nav-link active m-0 p-2 fw-bold" aria-current="page" href="{{ route('listaprodotti') }}">Tutti i prodotti</a>
           </li>
 
+          <li class="nav-item ">
+            <a class="nav-link active m-0 p-2 fw-bold" aria-current="page" href="{{ route('creanegozio') }}">Crea negozio</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link active m-0 p-2 fw-bold" aria-current="page" href="{{ route('listanegozi') }}">Tutti i negozi</a>
+          </li>
+
           @auth
           <div class="sec-center h-100 ms-5">
             <input class="dropdown m-0 p-0" type="checkbox" id="dropdown" name="dropdown"/>
