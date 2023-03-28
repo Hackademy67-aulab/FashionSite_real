@@ -29,6 +29,13 @@
           <div class="alert alert-danger">{{ $message }}</div>
           @enderror
 
+          <label>
+            <input name="img" type="file" placeholder="img" class="@error('img') is-invalid @enderror"/>
+          </label>
+          @error('img')
+          <div class="alert alert-danger">{{ $message }}</div>
+          @enderror
+
 
           <button class="red" type="submit">Accedi</button>
 
