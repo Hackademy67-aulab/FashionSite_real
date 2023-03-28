@@ -29,7 +29,8 @@
           <div class="alert alert-danger">{{ $message }}</div>
           @enderror
 
-          <button class="red" type="submit">Registrati</button>
+
+          <button class="red" type="submit">Accedi</button>
 
         </form>
 
