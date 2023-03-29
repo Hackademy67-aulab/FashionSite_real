@@ -27,7 +27,7 @@
           </li>
 
           <li class="nav-item ">
-            <a class="nav-link active m-0 p-2 fw-bold" aria-current="page" href="">Profilo</a>
+            <a class="nav-link active m-0 p-2 fw-bold" aria-current="page" href="{{ route('profiloutente') }}">Profilo</a>
           </li>
 
           @auth

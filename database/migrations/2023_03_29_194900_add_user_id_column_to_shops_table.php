@@ -14,8 +14,6 @@ return new class extends Migration
         Schema::table('shops', function (Blueprint $table) {
             $table->unsignedBigInteger('user_id')->default(1);
             $table->foreign('user_id')->references('id')->on('user');
-            // la colonna userid farà riferimento all'id della tabella user
-            // unsignedBigInteger quanto deve essere grosso lo spazio
         });
     }
 

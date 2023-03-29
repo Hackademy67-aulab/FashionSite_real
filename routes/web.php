@@ -33,3 +33,7 @@ Route::get('/modificanegozi{shop}', [ShopController::class, 'edit'])->name('modi
 Route::put('/negoziomodificato{shop}', [ShopController::class, 'update'])->name('negoziomodificato');
 
 Route::delete('/negoziocancellato{shop}', [ShopController::class, 'destroy'])->name('negoziocancellato');
+
+
+Route::get('/profiloutente', [PublicController::class, 'profile'])->name('profiloutente');
+Route::get('/profilocancellato', [PublicController::class, 'destroy'])->name('profilocancellato');

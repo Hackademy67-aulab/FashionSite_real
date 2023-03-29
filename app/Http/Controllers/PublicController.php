@@ -13,6 +13,16 @@ class PublicController extends Controller
         return view('home');
     }
 
+    public function profile () {
+        return view('profile');
+    }
+
+    public function destroy () {
+
+        Auth::user()->delete();
+
+        return redirect(route('homePage'))->with('message','Utente cancellato correttamente! Addddddddiosssss!!!');
+    }
 
 
 
