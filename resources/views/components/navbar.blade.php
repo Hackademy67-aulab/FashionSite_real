@@ -9,11 +9,11 @@
           <li class="nav-item ">
             <a class="nav-link active m-0 p-2 fw-bold" aria-current="page" href="{{ route('home') }}">Home</a>
           </li>
-          @if (Auth::user()->id==1)
+          {{-- @if (Auth::user()->id==1) --}}
           <li class="nav-item ">
             <a class="nav-link active m-0 p-2 fw-bold" aria-current="page" href="{{ route('creaprodotto') }}">Crea prodotto</a>
           </li>
-          @endif
+          {{-- @endif --}}
           <li class="nav-item ">
             <a class="nav-link active m-0 p-2 fw-bold" aria-current="page" href="{{ route('listaprodotti') }}">Tutti i prodotti</a>
           </li>
@@ -24,6 +24,10 @@
 
           <li class="nav-item ">
             <a class="nav-link active m-0 p-2 fw-bold" aria-current="page" href="{{ route('listanegozi') }}">Tutti i negozi</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link active m-0 p-2 fw-bold" aria-current="page" href="">Profilo</a>
           </li>
 
           @auth

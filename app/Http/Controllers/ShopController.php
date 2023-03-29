@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Shop;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ShopController extends Controller
 {
@@ -64,7 +65,8 @@ class ShopController extends Controller
             'name'=>$request->name,
             'city'=>$request->city,
             'description'=>$request->description,
-            'img'=>$request->has('img') ? $request->file('img')->store('public/image') : $shop->image
+            'img'=>$request->has('img') ? $request->file('img')->store('public/image') : $shop->image,
+            'user_id'=>Auth::user()->id
         ]);
         return redirect(route('home'))->with('message','hai modificato correttamente il negozio');
     }
