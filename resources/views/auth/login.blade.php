@@ -2,7 +2,6 @@
     <x-slot name=title>{{Route::currentRouteName()}}</x-slot>
     <section class="m-0 p-0">
         <x-navbar/>
-        <x-percorso/>
 
         <form style="margin-top:15rem" method="POST" action="{{route('login')}}" enctype="multipart/form-data">
           {{-- enctype permette di gestire file multimediali --}}
@@ -10,7 +9,7 @@
           @csrf
 
           <div class="segment text-center mb-5">
-            <h1>Login</h1>
+            <h1>Accedi</h1>
           </div>
 
           <section>

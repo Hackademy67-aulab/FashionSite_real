@@ -83,6 +83,8 @@ i:hover{
 
 @media screen and (min-width:992px) {
 
+
+
     .icon{
         display: flex;
         justify-content: flex-end;
@@ -193,6 +195,26 @@ h2{
 
 
 @media screen and (max-width:992px) {
+
+  .madewith{
+    position: relative;
+    top: -5rem;
+  }
+
+  .footersignuup{
+    display: flex;
+    justify-content: center;
+    align-items: baseline !important;
+  }
+
+  .footer{
+    position: relative;
+    top: -12rem;
+    width: 95vw !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .header{
     height: 44.1rem;
@@ -613,7 +635,7 @@ h2{
 .section-dropdown {
   position: absolute;
   padding: 5px;
-  background-color: #ffffff;
+  background-color: #EBECF0;
   top: 60px;
   left: 0;
   width: 100%;
@@ -627,7 +649,7 @@ h2{
   transition: all 200ms linear;
 }
 .dark-light:checked ~ .sec-center .section-dropdown {
-  background-color: #fff;
+  background-color: ##EBECF0;
   box-shadow: 0 14px 35px 0 rgba(9,9,12,0.15);
 }
 .dropdown:checked ~ .section-dropdown{
@@ -653,7 +675,7 @@ h2{
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-bottom: 8px solid #ffffff;
+  border-bottom: 8px solid #ebecf0;
   content: '';
   display: block;
   z-index: 2;

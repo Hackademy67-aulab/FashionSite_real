@@ -25,7 +25,7 @@ class ProductController extends Controller
             'name'=>$request->name,
             'price'=>$request->price,
             'description'=>$request->description,
-            'img'=>$request->file('img')->store('public/img')
+            'img'=>$request->file('img')->store('public/img'),
         ]);
 
         return redirect(route('home'))->with('message','hai inserito correttamente il prodotto');

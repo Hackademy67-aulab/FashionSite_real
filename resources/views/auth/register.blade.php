@@ -3,19 +3,18 @@
     <section class="m-0 p-0">
         <x-navbar/>
 
-        <x-percorso/>
 
         <form style="margin-top:10rem" method="POST" action="{{route('register')}}" enctype="multipart/form-data">
           {{-- enctype permette di gestire file multimediali --}}
           @csrf
           <div class="segment text-center mb-5">
-            <h1>Register</h1>
+            <h1>Registrati</h1>
           </div>
 
           <section>
 
             <label>
-              <input name="name" type="text" placeholder="name" class="@error('name') is-invalid @enderror"/>
+              <input name="name" type="text" placeholder="Nome e Cognome" class="@error('name') is-invalid @enderror"/>
             </label>
             @error('name')
             <div class="alert alert-danger">{{ $message }}</div>

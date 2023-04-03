@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [PublicController::class, 'home'])->name('home');
+Route::get('/verificaemail', [PublicController::class, 'verified'])->name('verificaemail');
 
 Route::get('/creaprodotto', [ProductController::class, 'creaprodotto'])->name('creaprodotto');
 Route::post('/prodottocreato', [ProductController::class, 'prodottocreato'])->name('prodottocreato');
@@ -36,4 +37,4 @@ Route::delete('/negoziocancellato{shop}', [ShopController::class, 'destroy'])->n
 
 
 Route::get('/profiloutente', [PublicController::class, 'profile'])->name('profiloutente');
-Route::get('/profilocancellato', [PublicController::class, 'destroy'])->name('profilocancellato');
+Route::delete('/profilocancellato', [PublicController::class, 'destroy'])->name('profilocancellato');

@@ -21,7 +21,9 @@
                 <p class="my-2 p-0">{{$shop->name}}</p>
                 <p class="fw-bold m-0 p-0">{{$shop->city}}</p>
                 <p class="fw-bold m-0 p-0">{{$shop->description}}</p>
-                <p class="fw-bold m-0 p-0">creato da {{$shop->user->name}}</p>
+                <p class="fw-bold m-0 p-0">creato da {{ Auth::user()->name }}</p>
+                @auth
+                @if (Auth::user()->id==shop->id)
                 <a href="{{ route('modificanegozi',compact('shop')) }}">Modifica</a>
                 {{-- <a href="Chiama la modale">Cancella</a> --}}
                 {{-- <a href="Chiama la modale">Cancella</a> --}}
@@ -30,10 +32,13 @@
                     @method('delete')
                     @csrf
                 </form>
+                @endif
+          @endauth
 
             </section>
 
             @endforeach
+
 
 
 

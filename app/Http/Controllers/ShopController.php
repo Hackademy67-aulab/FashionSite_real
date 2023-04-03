@@ -30,11 +30,18 @@ class ShopController extends Controller
      */
     public function store(Request $request)
     {
-        $products = Shop::create([
+                // Auth::user()->shops()->create([
+        //     'name'=>$request->name,
+        //     'city'=>$request->city,
+        //     'description'=>$request->description,
+        //     'img'=>$request->file('img')->store('public/img')
+        // ]);
+        $shop = Shop::create([
             'name'=>$request->name,
             'city'=>$request->city,
             'description'=>$request->description,
-            'img'=>$request->file('img')->store('public/img')
+            'img'=>$request->file('img')->store('public/img'),
+            'user_id'=>Auth::user()->id
         ]);
 
         return redirect(route('home'))->with('message','hai creato correttamente il negozio');

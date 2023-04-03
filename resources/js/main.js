@@ -11,6 +11,23 @@ window.addEventListener('scroll', () => {
 
 })
 
+let buttonnavbar = document.querySelector('.buttonnavbar');
+let navbarlgpos = document.querySelector('.navbarlgpos');
+
+
+buttonnavbar.addEventListener('click', () => {
+
+  if(checked == true){
+    navbarlgpos.classList.add("glass");
+    navbarlgpos.style.paddingTop="1rem";
+    checked = false;
+  } else {
+    navbarlgpos.classList.remove("glass");
+    navbarlgpos.style.paddingTop="1rem";
+    checked = true;
+  }
+
+})
 
 
 

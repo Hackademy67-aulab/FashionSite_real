@@ -67,7 +67,7 @@
                 <p class="fw-bold w-100  text-center text-dark d-flex justify-content-center m-0">T-shirt Adidas</p>
                 <div class="d-flex justify-content-center">
                     <p class=" fw-semibold text-body-secondary text-decoration-line-through me-2">$30</p>
-                    <p  class=" fw-semibold discountcolor">$15</p>
+                    <p  class=" fw-semibold discountcolor">$15 </p>
                 </div>
             </article>
         </div>
@@ -138,9 +138,9 @@
         <button class="bg-dark text-white my-5 my-lg-0 px-5 py-3 h6 fw-bold reveal fade-bottom ">View all</button>
     </div>
 
-    <div class="container-fluid d-flex align-items-center mt-0 pt-4 mt-lg-5 pt-lg-5 flex-column reveal fade-bottom ">
+    <div class="container-fluid d-flex align-items-center mt-0 pt-4 mt-lg-5 pt-lg-5 flex-column reveal fade-bottom " >
 
-        <div class="row everyday" style="width: 60%; height:50rem;">
+        <div class="row everyday" style="width: 60%; min-height:50rem;">
             <div class=" col-12 col-lg-6 d-flex flex-column justify-content-center px-1 px-lg-5 everydayp">
                 <h4 class="fw-bold mb-2" style="color: #616161">Everyday collection 2021</h4>
                 <h3 class="h1 fw-bold mb-4">Be yourself</h2>
@@ -177,6 +177,57 @@
             </section>
         </div>
     </div>
+
+
+    <div class="container-fluid footer mt-lg-5 pt-lg-5 pb-2" style="width: 60%; ; border-bottom:1px solid rgb(219, 219, 219)">
+        <div class="row justify-content-center h-100">
+            <div class=" col-12 col-lg-6 footercol">
+                <div class="row">
+                    <div class=" col-12 col-lg-4  m-lg-0 p-lg-0 mb-5 mb-lg-0">
+                        <h5 class=" fw-bold">Company Info</h5>
+                        <a class="p-0 my-lg-2 mt-3 " style="color:#a9abb2" href="">About us</a>
+                        <a class="p-0 my-lg-2 " style="color:#a9abb2" href="">Affiliate</a>
+                        <a class="p-0 my-lg-2 " style="color:#a9abb2" href="">Fashion Blog</a>
+                    </div>
+                    <div class=" col-12 col-lg-4 footercol mb-5 mb-lg-0">
+                        <h5 class=" fw-bold">Help & Support</h5>
+                        <a class="p-0 my-2 mt-3 footercol" style="color:#a9abb2" href="">Shipping Info</a>
+                        <a class="p-0 my-2 footercol" style="color:#a9abb2" href="">Refunds</a>
+                        <a class="p-0 my-2 footercol" style="color:#a9abb2" href="">How to Order</a>
+                        <a class="p-0 my-2 footercol" style="color:#a9abb2" href="">How to Track</a>
+                        <a class="p-0 my-2 footercol" style="color:#a9abb2" href="">Size Guides</a>
+                    </div>
+                    <div class="col-12 col-lg-4 footercol mb-5 mb-lg-0">
+                        <h5 class="k fw-bold">Customer Care</h5>
+                        <a class="p-0 my-2 mt-3 " style="color:#a9abb2" href="">Contact Us</a>
+                        <a class="p-0 my-2 " style="color:#a9abb2" href="">Payment Methods</a>
+                        <a class="p-0 my-2 " style="color:#a9abb2" href="">Bonus Point</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 footersignuup  d-flex flex-column align-items-end mt-3 mt-lg-0">
+                <h5 class="m-0 p-0 text-end fw-bold ">Sign up for latest news</h5>
+                <div class="row input-group-icon mt-3 me-1" style="width: fit-content">
+                    <input class="form-control input-box" type="email" placeholder="Enter Email" aria-label="email" />
+                </div>
+                <p class="text-800 mt-5 ">
+                    <svg class="feather feather-phone me-3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg><span class="text-800">+3930219390</span>
+                  </p>
+                  <p class="text-800">
+                    <svg class="feather feather-mail me-3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg><span class="text-800">something@gmail.com</span>
+                  </p>
+            </div>
+        </div>
+    </div>
+
+    <p class="mt-0 mt-lg-3 madewith">Made with <svg class="bi bi-suit-heart-fill" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#EB6453" viewBox="0 0 16 16">
+        <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"></path>
+      </svg>&nbsp;by Fabio&nbsp; </p>
 
 
     <!-- Swiper JS -->
